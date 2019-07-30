@@ -60,6 +60,7 @@
                                 <state key="normal" title="Camera"/>
                                 <connections>
                                     <action selector="cameraButton:" destination="e7C-so-3Gk" eventType="touchUpInside" id="tLg-d7-Zr6"/>
+                                    <action selector="takeSelfieTapped2:" destination="e7C-so-3Gk" eventType="touchUpInside" id="ntY-xC-dht"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcE-NA-qEG">
@@ -98,7 +99,6 @@
                     <navigationItem key="navigationItem" title="Add New Photo" id="Wg7-nz-Yp6"/>
                     <connections>
                         <outlet property="Image" destination="neF-jM-4TF" id="yqV-qZ-KWK"/>
-                        <outlet property="captionText" destination="a5d-63-ke9" id="3fs-bR-X91"/>
                         <outlet property="textField" destination="a5d-63-ke9" id="jxh-bn-hPB"/>
                     </connections>
                 </viewController>

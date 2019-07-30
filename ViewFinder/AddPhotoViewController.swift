@@ -19,7 +19,7 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         imagePicker.delegate = self
         // Do any additional setup after loading the view.
     }
-    @IBAction func takeSelfieTapped(_sender: Any) {
+    @IBAction func takeSelfieTapped2(_ sender: Any) {
         imagePicker.sourceType = .camera
         present(imagePicker, animated: true, completion: nil)
     }
@@ -44,7 +44,19 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
     }
     
     @IBAction func saveButton(_ sender: UIButton) {
-        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {}
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+    
+            let photoToSave = Photos(entity: Photos.entity(), insertInto: context)
+            
+            photoToSave.caption = textField.text
+            
+            if let userImage = Image.image {
+               
+                if let userImageData = userImage.pngData() {
+                    photoToSave.imageData = userImageData
+                }
+            
+        }
         
     }
         
@@ -63,3 +75,4 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
     */
 
 
+}

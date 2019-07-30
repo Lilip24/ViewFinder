@@ -13,6 +13,7 @@
 		22E14EE422EF69FD0053BB91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E14EE322EF69FD0053BB91 /* Assets.xcassets */; };
 		22E14EE722EF69FD0053BB91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E14EE522EF69FD0053BB91 /* LaunchScreen.storyboard */; };
 		22E14EF322EF7DD30053BB91 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E14EF222EF7DD30053BB91 /* AddPhotoViewController.swift */; };
+		22EAB45D22F090850092D531 /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22EAB45C22F090850092D531 /* TableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		22E14EE622EF69FD0053BB91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22E14EE822EF69FD0053BB91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22E14EF222EF7DD30053BB91 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		22EAB45C22F090850092D531 /* TableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				22E14ED922EF69FC0053BB91 /* AppDelegate.swift */,
+				22EAB45C22F090850092D531 /* TableTableViewController.swift */,
 				22E14EF222EF7DD30053BB91 /* AddPhotoViewController.swift */,
 				22E14EDD22EF69FC0053BB91 /* Main.storyboard */,
 				22E14EE322EF69FD0053BB91 /* Assets.xcassets */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22EAB45D22F090850092D531 /* TableTableViewController.swift in Sources */,
 				22E14EE222EF69FC0053BB91 /* ViewFinder.xcdatamodeld in Sources */,
 				22E14EF322EF7DD30053BB91 /* AddPhotoViewController.swift in Sources */,
 				22E14EDA22EF69FC0053BB91 /* AppDelegate.swift in Sources */,

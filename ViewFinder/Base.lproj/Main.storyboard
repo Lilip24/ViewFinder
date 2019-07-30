@@ -58,18 +58,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraButton:" destination="e7C-so-3Gk" eventType="touchUpInside" id="tLg-d7-Zr6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kcE-NA-qEG">
                                 <rect key="frame" x="20" y="180" width="165" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="PhotoLibrary"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6b-Xe-otu">
-                                <rect key="frame" x="20" y="236" width="98" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Albums"/>
+                                <connections>
+                                    <action selector="photoLibraryButton:" destination="e7C-so-3Gk" eventType="touchUpInside" id="nTb-Qf-pSe"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Unknown" translatesAutoresizingMaskIntoConstraints="NO" id="neF-jM-4TF">
                                 <rect key="frame" x="127" y="332" width="120" height="120"/>
@@ -82,7 +82,7 @@
                                 <state key="normal" title="Save"/>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a5d-63-ke9">
-                                <rect key="frame" x="175" y="471" width="25" height="30"/>
+                                <rect key="frame" x="127" y="471" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -93,6 +93,9 @@
                         <viewLayoutGuide key="safeArea" id="9aC-Jb-DzB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Photo" id="Wg7-nz-Yp6"/>
+                    <connections>
+                        <outlet property="Image" destination="neF-jM-4TF" id="yqV-qZ-KWK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Yj-Hg-CuD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

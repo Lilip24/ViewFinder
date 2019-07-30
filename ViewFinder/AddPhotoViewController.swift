@@ -12,6 +12,8 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
     
     var imagePicker = UIImagePickerController()
 
+    @IBOutlet weak var textField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
@@ -41,7 +43,15 @@ class AddPhotoViewController: UIViewController, UIImagePickerControllerDelegate,
         present(imagePicker, animated: true, completion: nil)
     }
     
-}
+    @IBAction func saveButton(_ sender: UIButton) {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {}
+        
+    }
+        
+    }
+
+    
+
     /*
     // MARK: - Navigation
 

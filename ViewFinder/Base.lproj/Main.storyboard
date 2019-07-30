@@ -13,7 +13,7 @@
         <!--ViewFinder-->
         <scene sceneID="eSk-5w-gO2">
             <objects>
-                <tableViewController id="ZAu-XN-NgV" sceneMemberID="viewController">
+                <tableViewController id="ZAu-XN-NgV" customClass="TableTableViewController" customModule="ViewFinder" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="bmu-hq-RlT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,6 +80,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="e7C-so-3Gk" eventType="touchUpInside" id="AcP-ex-4Fe"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a5d-63-ke9">
                                 <rect key="frame" x="127" y="471" width="120" height="30"/>
@@ -95,6 +98,8 @@
                     <navigationItem key="navigationItem" title="Add New Photo" id="Wg7-nz-Yp6"/>
                     <connections>
                         <outlet property="Image" destination="neF-jM-4TF" id="yqV-qZ-KWK"/>
+                        <outlet property="captionText" destination="a5d-63-ke9" id="3fs-bR-X91"/>
+                        <outlet property="textField" destination="a5d-63-ke9" id="jxh-bn-hPB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Yj-Hg-CuD" userLabel="First Responder" sceneMemberID="firstResponder"/>
